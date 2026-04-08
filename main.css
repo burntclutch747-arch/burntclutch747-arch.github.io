@@ -1,0 +1,263 @@
+* {
+	font-family: Impact;
+}
+
+*::selection {
+	color: white;
+	background-color: #012169;
+}
+
+html {	
+	scroll-behavior: smooth;
+}
+
+body {
+	background-color: #CCCCCC;
+	margin: 0px;
+	overflow-x: hidden;
+}
+
+section {
+	max-width: 65%;
+	display: block;
+	margin: auto;
+}
+
+h1 {
+	color: white;
+	background-color: #012169;
+	font-size: 50pt;
+	font-weight: 800;
+	text-align: center;
+	padding-top: 25vh;
+	padding-bottom: 10vh;
+}
+
+h2 {
+	color: #C8102E;
+	font-size: 30pt;
+	text-align: center;
+	font-weight: 100;
+	width: 100%;
+}
+
+h3 {
+	color: #C8102E;
+	font-size: 25pt;
+	text-align: center;
+	font-weight: 100;
+	width: 100%;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+h4 {
+	color: black;
+	font-size: 25pt;
+	text-align: center;
+	font-weight: 100;
+	width: 100%;
+}
+
+h5 {
+	color: black;
+	font-size: 20pt;
+	text-align: center;
+	font-weight: 100;
+	width: 100%;
+	margin-top: -40px;
+}
+
+p {
+	color: black;
+	font-family: Segoe UI;
+	font-size: 20pt;
+	text-align: center;
+	font-weight: 500;
+	width: 100%;
+	display: block;
+	margin: auto;
+}
+
+a {
+	color: black;
+	font-size: 25pt;
+	text-align: center;
+	font-weight: 100;
+	text-decoration: none;
+	transition-duration: 0.4s;
+}
+
+a:hover {
+	color: #C8102E;
+}
+
+.top_buttons {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 20px;
+	width: 50%;
+}
+
+button {
+	color: white;
+	background-color: #012169;
+	font-size: 25pt;
+	font-weight: 100;
+	padding: 10px;
+	min-width: 100%;
+	max-width: 100%;
+	border: none;
+	cursor: hand;
+	transition-duration: 0.4s;
+}
+
+button:hover {
+	background-color: #C8102E;
+}
+
+.t_shirt_image_grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 50px;
+	min-width: 100%;
+}
+
+img {
+	max-width: 100%;
+	min-height: 300px;
+	object-fit: contain;
+}
+
+.t_shirt_image {
+	background-color: #EEEEEE;
+	max-width: 100%;
+	justify-self: center;
+	scale: 1;
+	cursor: hand;
+	padding-top: 10px;
+	padding-bottom: 1px;
+	padding-left: 25px;
+	padding-right: 25px;
+	filter: drop-shadow(10px 10px 10px #BBBBBB);
+	transition-duration: 0.4s;
+}
+
+.t_shirt_image:hover {
+	filter: drop-shadow(20px 20px 10px #BBBBBB);
+	scale: 1.03;
+}
+
+@media only screen and (orientation: portrait) {	
+	section {
+		min-width: 90%;
+		display: block;
+		margin: auto;
+	}
+
+	h1 {
+		color: white;
+		background-color: #012169;
+		font-size: 100pt;
+		font-weight: 800;
+		text-align: center;
+		padding-top: 25vh;
+		padding-bottom: 10vh;
+	}
+
+	h2 {
+		color: #C8102E;
+		font-size: 50pt;
+		text-align: center;
+		font-weight: 100;
+		width: 100%;
+	}
+
+	h3 {
+		color: #C8102E;
+		font-size: 50pt;
+		text-align: center;
+		font-weight: 100;
+		width: 100%;
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+
+	h4 {
+		color: black;
+		font-size: 50pt;
+		text-align: center;
+		font-weight: 100;
+		width: 100%;
+	}
+
+	h5 {
+		color: black;
+		font-size: 40pt;
+		text-align: center;
+		font-weight: 100;
+		width: 100%;
+		margin-top: -40px;
+	}
+
+	p {
+		color: black;
+		font-family: Segoe UI;
+		font-size: 40pt;
+		text-align: center;
+		font-weight: 500;
+		width: 90%;
+		display: block;
+		margin: auto;
+	}
+
+	a {
+		color: black;
+		font-size: 50pt;
+		text-align: center;
+		font-weight: 100;
+		text-decoration: none;
+		transition-duration: 0.4s;
+	}
+
+	.top_buttons {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 20px;
+		width: 90%;
+	}
+	
+	button {
+		color: white;
+		background-color: #012169;
+		font-size: 50pt;
+		font-weight: 100;
+		padding: 10px;
+		min-width: 100%;
+		max-width: 100%;
+		border: none;
+		cursor: hand;
+		transition-duration: 0.4s;
+	}
+	.t_shirt_image_grid {
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		gap: 10px;
+		width: 90%;
+	}
+
+	img {
+		max-width: 60%;
+		object-fit: contain;
+	}
+
+	.t_shirt_image {
+		background-color: #EEEEEE;
+		max-width: 50%;
+		scale: 1;
+		padding: 0px;
+		cursor: hand;
+		filter: drop-shadow(10px 10px 10px #BBBBBB);
+		transition-duration: 0.4s;
+	}
+}
