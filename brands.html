@@ -8,18 +8,22 @@
 			document.getElementById("background_video").style.width = "500%";
 			document.getElementById("background_video").style.left = "-200%";
 		}
+		function scroll_to_section(which_section) {
+			const which_old_div = document.getElementById(which_section);
+			which_old_div.scrollIntoView({behaviour: "smooth"});
+		}
 	</script>
 	<iframe id="top" src="top.html"></iframe>
 	<h3>Brands</h3>
 	<h4>Our brands:</h4>	
 	<section id="brands_table">
-		<a href="#audi" target="_parent"><image class="brand_logo_button" src="brands/audi.png"></image></a>
-		<a href="#bmw" target="_parent"><image class="brand_logo_button" src="brands/bmw.png"></image></a>
-		<a href="#daf" target="_parent"><image class="brand_logo_button" src="brands/daf.png"></image></a>
-		<a href="#ford" target="_parent"><image class="brand_logo_button" src="brands/ford.png"></image></a>
-		<a href="#jeep" target="_parent"><image class="brand_logo_button" src="brands/jeep.png"></image></a>
-		<a href="#subaru" target="_parent"><image class="brand_logo_button" src="brands/subaru.png"></image></a>
-		<a href="#toyota" target="_parent"><image class="brand_logo_button" src="brands/toyota.png"></image></a>
+		<button class="brand_logo_button" onclick="scroll_to_section('audi')"><image class="brand_logo_button_image" src="brands/audi.png"></image></button>
+		<button class="brand_logo_button" onclick="scroll_to_section('bmw')"><image class="brand_logo_button_image" src="brands/bmw.png"></image></button>
+		<button class="brand_logo_button" onclick="scroll_to_section('daf')"><image class="brand_logo_button_image" src="brands/daf.png"></image></button>
+		<button class="brand_logo_button" onclick="scroll_to_section('ford')"><image class="brand_logo_button_image" src="brands/ford.png"></image></button>
+		<button class="brand_logo_button" onclick="scroll_to_section('jeep')"><image class="brand_logo_button_image" src="brands/jeep.png"></image></button>
+		<button class="brand_logo_button" onclick="scroll_to_section('subaru')"><image class="brand_logo_button_image" src="brands/subaru.png"></image></button>
+		<button class="brand_logo_button" onclick="scroll_to_section('toyota')"><image class="brand_logo_button_image" src="brands/toyota.png"></image></button>
 	</section>
 	<section id="shop">
 		<table id="audi">

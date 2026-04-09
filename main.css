@@ -191,18 +191,24 @@ img {
 }
 
 .brand_logo_button {
-	min-height: 39px;
-	max-height: 40px;
-	padding: 0px;
-	margin-top: 10px;
-	margin-bottom: 0px;
+	background-color: transparent;
+	padding: 15px;
+	margin: 0px;
+	min-width: 12%;
+	max-width: 14%;
 	transition-duration: 0.4s;
 }
 
 .brand_logo_button:hover {
-	margin-top: 0px;
-	margin-bottom: 10px;
+	background-color: transparent;
 }
+
+.brand_logo_button_image {
+	width: 100%;
+	min-height: 49px;
+	max-height: 50px;
+}
+
 @media only screen and (orientation: portrait) {
 	iframe {
 		height: 150%;
