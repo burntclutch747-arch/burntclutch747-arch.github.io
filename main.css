@@ -129,6 +129,12 @@ a:hover {
 	min-width: 100%;
 }
 
+#brands_table {
+	display: flex;
+	justify-content: space-between;
+	min-width: 65%;
+}
+
 button {
 	color: white;
 	background-color: #d9692e;
@@ -178,6 +184,25 @@ img {
 	scale: 1.03;
 }
 
+.brand_logo {
+	width: 10%;
+	padding-left: 15px;
+	margin-top: -45px;
+}
+
+.brand_logo_button {
+	min-height: 39px;
+	max-height: 40px;
+	padding: 0px;
+	margin-top: 10px;
+	margin-bottom: 0px;
+	transition-duration: 0.4s;
+}
+
+.brand_logo_button:hover {
+	margin-top: 0px;
+	margin-bottom: 10px;
+}
 @media only screen and (orientation: portrait) {
 	iframe {
 		height: 150%;
@@ -267,6 +292,14 @@ img {
 		gap: 20px;
 		width: 90%;
 	}
+
+
+	#brands_table {
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		gap: 10px;
+		min-width: 90%;
+	}
 	
 	button {
 		color: white;
@@ -300,5 +333,16 @@ img {
 		cursor: hand;
 		filter: drop-shadow(10px 10px 10px #BBBBBB);
 		transition-duration: 0.4s;
+	}
+
+	.brand_logo {
+		width: 20%;
+		padding-left: 15px;
+		margin-top: -85px;
+	}
+
+	.brand_logo_button {
+		min-height: 100px;
+		padding: 30px;
 	}
 }
