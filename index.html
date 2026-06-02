@@ -1,1 +1,60 @@
-Website coming soon
+<html>
+<link id="the_stylesheet" rel="stylesheet" href="main.css">
+<title>Burnt Clutch</title>
+<body>
+	<script>
+		function scroll_to_section(section_id) {
+			const div_to_scroll_to = document.getElementById(section_id);
+			div_to_scroll_to.scrollIntoView({behavior: "smooth"});
+		}
+	</script>
+	<h1>@Burnt_Clutch</h1>
+	<p><i>Quality entertainment since 2025</i></p>
+	<table id="top_table">
+		<tr>
+			<td><a href="https://burnt-clutch.com">Home</a></td>
+			<td><a onclick="scroll_to_section('about')">About</a></td>
+			<td><a href="https://www.youtube.com/@Burnt_Clutch" target="_blank">YouTube</a></td>
+			<td><a href="https://burnt-clutch.com/projects" target="_blank">Projects</a></td>
+			<td><a href="https://sellshirts.com/marketplace/burntclutch" target="_blank">Merch</a></td>
+		</tr>
+	</table>
+	<h2 style="margin-top: 100px">Welcome</h2>
+	<image style="width: 25%" src="images/burnt_clutch_logo_transparrent.png"></image>
+	<h2 id="about">About Burnt Clutch</h2>
+	<p>Burnt Clutch create vehicle related entertainment.  We aim to make our content as entertaining and factual as possible.</p>
+	<h2>Contact us</h2>
+	<p>Email: burntclutch747@gmail.com</p>
+	<h2>Our YouTube channel</h2>
+	<p>Check out our latest video!</p>
+	<h1 id="show_subscribers">17</h1>
+	<script>
+		var current_subscribers = 17;
+		var current_show_subscribers = 0;
+		var youtube_screenshot_opacity = 0;
+		function update_window() {
+			if (window.scrollY > 300) {
+				if (current_show_subscribers < current_subscribers) {
+					current_show_subscribers = current_show_subscribers + 1;
+					document.getElementById("show_subscribers").innerHTML = "Subscribers: " + String(current_show_subscribers);
+				};
+			};
+			if (window.scrollY > 450) {
+				if (youtube_screenshot_opacity < 100) {
+					youtube_screenshot_opacity = youtube_screenshot_opacity + 10;
+					document.getElementById("youtube_screenshot").style.opacity = String(youtube_screenshot_opacity) + "%";
+				}
+			}
+			setTimeout(update_window, 100);
+		};
+		update_window();
+	</script>
+	<image id="youtube_screenshot" src="images/youtube_screenshot.png"></image>
+	<p style="font-weight: 500; text-align: center">~ Burnt Clutch 2026 ~</p>
+	<script>
+		if (window.innerWidth < window.innerHeight) {
+			document.getElementById("the_stylesheet").href = "vertical.css";
+		}
+	</script>
+</body>
+</html>

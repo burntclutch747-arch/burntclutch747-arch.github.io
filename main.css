@@ -1,0 +1,63 @@
+* {
+	font-family: Impact;
+	text-align: center;
+}
+
+*::selection {
+	color: white;
+	background-color: #916903;
+}
+
+body {
+	background-color: #262626;
+	overflow-x: hidden;
+}
+
+#top_table {
+	background-image: linear-gradient(to bottom, #404040, #303030);
+	width: 50%;
+	margin-left: 25%;
+}
+
+h1 {
+	color: #ffb700;
+	font-weight: 500;
+	font-size: 50pt;
+}
+
+h2 {
+	color: white;
+	font-weight: 500;
+	font-size: 25pt;
+	text-align: left;
+	margin-top: 150px;
+	margin-left: 25%;
+}
+
+p {
+	color: white;
+	font-family: Segoe UI;
+	font-weight: 500;
+	font-size: 16pt;
+	width: 50%;
+	text-align: left;
+	margin-left: 25%;
+}
+
+a {
+	color: #ffb700;
+	font-weight: 500;
+	font-size: 25pt;
+	cursor: hand;
+	text-decoration: none;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+a:hover {
+	color: #e85231;
+}
+
+img {
+	width: 50%;
+}

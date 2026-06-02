@@ -1,0 +1,36 @@
+<html>
+<link rel="stylesheet" href="main.css">
+<title>Burnt Clutch</title>
+<body>
+	<script>
+		function scroll_to_section(section_id) {
+			const div_to_scroll_to = document.getElementById(section_id);
+			div_to_scroll_to.scrollIntoView({behavior: "smooth"});
+		}
+	</script>
+	<h1>@Burnt_Clutch</h1>
+	<p><i>Quality entertainment since 2025</i></p>
+	<table style="background-image: linear-gradient(to bottom, #404040, #303030); width: 50%; margin-left: 25%">
+		<tr>
+			<td><a href="https://burnt-clutch.com">Home</a></td>
+			<td><a onclick="scroll_to_section('about')">About</a></td>
+			<td><a href="https://www.youtube.com/@Burnt_Clutch" target="_blank">YouTube</a></td>
+			<td><a href="https://burnt-clutch.com/projects" target="_blank">Projects</a></td>
+			<td><a href="https://sellshirts.com/marketplace/burntclutch" target="_blank">Merch</a></td>
+		</tr>
+	</table>
+	<h2 style="margin-top: 100px">Projects</h2>
+	<p>At Burnt Clutch we try to be as creative as possible, pushing the boundaries of our previous project!</p>
+	<h2>RC DAF XD</h2>
+	<h2>RC Tank</h2>
+	<h2>Go Karting!</h2>
+	<p>More info for this game can be found <a style="font-family: Segoe UI; margin: 0px; font-size: 16pt" href="https://burnt-clutch-games.itch.io/go-karting" target="_blank">here</a>.</p>
+	<p style="font-weight: 500; text-align: center">~ Burnt Clutch 2026 ~</p>
+	<script>
+		if (window.innerWidth < window.innerHeight) {
+			document.getElementById("the_stylesheet").href="vertical.css";
+			document.getElementById("top_table").style.width = "100%";
+		}
+	</script>
+</body>
+</html>
