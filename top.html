@@ -1,0 +1,28 @@
+<html>
+<link id="the_stylesheet" rel="stylesheet" href="main.css">
+<title>Burnt Clutch</title>
+<body>
+	<script>
+		function scroll_to_section(section_id) {
+			const div_to_scroll_to = document.getElementById(section_id);
+			div_to_scroll_to.scrollIntoView({behavior: "smooth"});
+		}
+	</script>
+	<h1>@Burnt_Clutch</h1>
+	<p><i>Quality entertainment since 2025</i></p>
+	<table id="top_table">
+		<tr>
+			<td><a href="https://burnt-clutch.com" target="_top">Home</a></td>
+			<td><a onclick="scroll_to_section('about')" target="_top">About</a></td>
+			<td><a href="https://www.youtube.com/@Burnt_Clutch" target="_blank">YouTube</a></td>
+			<td><a href="https://burnt-clutch.com/projects" target="_blank">Projects</a></td>
+			<td><a href="https://sellshirts.com/marketplace/burntclutch" target="_blank">Merch</a></td>
+		</tr>
+	</table>
+	<script>
+		if (window.innerWidth < window.innerHeight) {
+			document.getElementById("the_stylesheet").href = "vertical.css";
+		}
+	</script>
+</body>
+</html>
